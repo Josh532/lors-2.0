@@ -1,0 +1,163 @@
+/* Global */
+body{
+    margin: 0; /* always set margin to 0 as website will look bad*/
+}
+
+/* Nav bar */
+
+nav li{
+    display: inline-block; 
+    margin: 15px; /* Space between the links */
+}
+
+nav {
+    display: flex; /* Displays text in a line */
+    background-color: antiquewhite; /* Background color */
+    align-items: center; /* Aligns text in center */
+    padding: 5px; /* Adds depth to the nav bar (height) */
+    justify-content: space-between; /* Splits nav into three parts title, links, buttons */
+}
+
+nav h1{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    margin-left: 50px;
+}
+
+nav .icons{
+    margin-right: 50px;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px; 
+}
+
+header {
+
+background-image: url("background.jpg"); /* replace with your file path or URL */
+    background-size: cover;   /* makes it fill the header */
+    background-repeat: no-repeat; /* prevents tiling */
+
+
+
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 100%;
+    height: 580px;
+}
+
+.interheader{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+}
+
+.interheader button {
+    background-color: antiquewhite;
+    transition: 0.3s;      /* shorter transition feels snappier */
+    border-radius: 6px;
+    width: 150px;          /* fixed size instead of percentage */
+    height: 45px;
+    border: none;
+    font-size: 16px;       /* text stays readable */
+    cursor: pointer;       /* shows pointer on desktop */
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+
+.interheader button:hover{
+    background-color: rgb(255, 255, 255);
+    scale:1.1;
+}
+
+.interheader h1{
+    color: white;
+    font-size: 48px;
+}
+
+.outercontainer {
+    text-align: center;   /* centers inline or inline-block children */
+    padding: 50px;
+}
+
+#dress {
+    width: 25%;           /* size of the image */
+    height: auto;         /* keep proportions */
+    display: inline-block; /* allows text-align to center it */
+    padding: 10px;
+}
+
+
+footer{
+    width: 100%;
+    display: inline-block;
+    background-color:antiquewhite;
+    height: 500px;
+}
+
+.containers {
+    text-align: center;
+    padding: 20px;
+}
+
+#container{
+    width: 100%;
+    height: 90%;
+}
+
+.clothescontainer {
+    width: 25%;
+    height: 650px;
+    background-color: antiquewhite;
+    margin: 25px 1%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clothescontainer button {
+    width: 90%;
+    margin-top: 50px;
+    max-width: 250px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.clothescontainer button:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
+
+  @media (max-width: 768px) {
+            .clothescontainer {
+                width: 90%;
+                display: flex;
+                margin: 20px auto;
+            }
+        }
